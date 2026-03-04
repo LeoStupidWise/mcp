@@ -1,0 +1,16 @@
+name: mcp
+
+services:
+  feishu:
+    container_name: feish
+    build:
+      context: ./feishu
+      dockerfile: Dockerfile
+    ports:
+      - "3201:3333"
+    env_file:
+      - ./feishu/.env
+    volumes:
+      - ./feishu/logs:/app/logs
+      - ./feishu/cache:/app/cache
+    restart: unless-stopped

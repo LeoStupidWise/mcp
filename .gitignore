@@ -1,0 +1,9 @@
+# 飞书凭证（勿提交）
+feishu/.env
+
+# Docker 数据卷
+feishu/logs/
+feishu/cache/
+
+# Feishu-MCP 源码（使用 npm 包构建，无需提交）
+feishu/Feishu-MCP/
