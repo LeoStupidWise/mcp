@@ -18,9 +18,3 @@ docker compose up -d feishu
 ```
 
 服务默认监听 `http://localhost:3201`。各 MCP 配置详见对应子目录。
-
-## rules
-
-将下面的 rule 添加到用户级别
-
-1. 使用 feishu mcp 时，先阅读根目录的 readme，这个文件将对目录结构进行说明，如果没有，进行提示并中断执行

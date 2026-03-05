@@ -51,6 +51,17 @@ docker compose up -d feishu
 }
 ```
 
+这里 userKey 用来识别用户，在飞书的 readme 中可以这样提示
+
+> 文档必须有一个 workspace，workspace 来自 mcp 的 userKey，对应到当前目录其他文件夹，所有文件创建的根目录就是这个 workspace，如果没有，进行提示
+
 **userKey 说明**：
 - `tenant` 模式：可选，用于区分不同连接
 - `user` 模式：**必填**，每个用户使用唯一标识（建议随机字符串），首次连接时会跳转飞书完成 OAuth 授权
+
+
+## rules
+
+将下面的 rule 添加到用户级别
+
+1. 使用 feishu mcp 时，workspace 是 potensic，先阅读云文档根目录的 readme，按照 readme 的提示进行操作，这个文件将对目录结构进行说明，如果没有，进行提示并中断执行

@@ -2,7 +2,7 @@ name: mcp
 
 services:
   feishu:
-    container_name: feish
+    container_name: feishu
     build:
       context: ./feishu
       dockerfile: Dockerfile
